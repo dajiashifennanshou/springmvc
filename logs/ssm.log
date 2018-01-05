@@ -1,0 +1,9 @@
+
+  [INFO][2018-01-05 10:44:50][com.duanfan.test.LogTest]infomessage
+[WARN][2018-01-05 10:44:50][com.duanfan.test.LogTest]warnmessage
+[ERROR][2018-01-05 10:44:50][com.duanfan.test.LogTest]errormessage
+[FATAL][2018-01-05 10:44:50][com.duanfan.test.LogTest]fatalmessage
+[INFO][2018-01-05 10:45:33][com.duanfan.test.LogTest]infomessage
+[WARN][2018-01-05 10:45:33][com.duanfan.test.LogTest]warnmessage
+[ERROR][2018-01-05 10:45:33][com.duanfan.test.LogTest]errormessage
+[FATAL][2018-01-05 10:45:33][com.duanfan.test.LogTest]fatalmessage
