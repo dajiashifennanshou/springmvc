@@ -12,7 +12,7 @@ import com.duanfan.service.impl.UserServiceImpl;
 @Controller
 @RequestMapping("/user")
 public class UserController {
-	  private static final Logger logger = Logger.getLogger(UserController.class);    
+	private static final Logger logger = Logger.getLogger(UserController.class);  
 	@Autowired
 	private UserServiceImpl uServiceImpl;
 	
