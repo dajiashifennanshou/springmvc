@@ -13,9 +13,8 @@ public class LogTest {
 		@SuppressWarnings("resource")  
 		ApplicationContext context=new ClassPathXmlApplicationContext("classpath:spring-mybatis.xml");  
 		RedisUtil redisUtil=(RedisUtil) context.getBean("redisUtil");
-//        redisUtil.set("name", "王赛超");  
+//        redisUtil.set("name", "鍚嶅瓧");  
 //        redisUtil.set("age", 24);  
-//        redisUtil.set("address", "河北邯郸");
         System.out.println(redisUtil.get("name")); 
 	}
 }
