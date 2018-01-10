@@ -19,8 +19,8 @@ public class UserServiceImpl implements UserService{
 	
 	@Cacheable(value={"user"}, key="#id")
 	@Override
-	public User getUserByid(String id) {
-		return userDao.selectByPrimaryKey(id);
+	public User getUserByid(int id) {
+		return userDao.selectByPrimaryKey(String.valueOf(id));
 	}
 
 }

@@ -18,7 +18,7 @@ public class UserController {
 
 	@RequestMapping("/getInfo")
 	public String toUserInfo(Model model){
-		User user = uServiceImpl.getUserByid("1");
+		User user = uServiceImpl.getUserByid(1);
 		logger.error(user.getName());
 		logger.info(user.getName());
 		logger.fatal(user.getAge());
