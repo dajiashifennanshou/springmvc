@@ -17,9 +17,9 @@ public class UserServiceImpl implements UserService{
 	@Autowired
 	private UserMapper userDao;
 	
-	@Cacheable("getUserByid")
+	@Cacheable(value={"user"}, key="#id")
 	@Override
-	public User getUserByid(int id) {
+	public User getUserByid(String id) {
 		return userDao.selectByPrimaryKey(id);
 	}
 

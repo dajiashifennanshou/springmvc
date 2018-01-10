@@ -7,18 +7,18 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.duanfan.entity.User;
-import com.duanfan.service.impl.UserServiceImpl;
+import com.duanfan.service.UserService;
 
 @Controller
 @RequestMapping("/user")
 public class UserController {
 	private static final Logger logger = Logger.getLogger(UserController.class);  
 	@Autowired
-	private UserServiceImpl uServiceImpl;
-	
+	private UserService uServiceImpl;
+
 	@RequestMapping("/getInfo")
 	public String toUserInfo(Model model){
-		User user = uServiceImpl.getUserByid(1);
+		User user = uServiceImpl.getUserByid("1");
 		logger.error(user.getName());
 		logger.info(user.getName());
 		logger.fatal(user.getAge());
